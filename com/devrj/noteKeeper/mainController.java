@@ -60,7 +60,7 @@ public class mainController {
             dueLabel.setText("");
             NoteData.getInstance().getListOfNotes().remove(listView.getSelectionModel().getSelectedItem());
             try{
-                listView.getItems().setAll(NoteData.getInstance().getListOfNotes());      //E
+                listView.getItems().setAll(NoteData.getInstance().getListOfNotes());      //Why does this throw NullPointerException?
             }catch(NullPointerException except){
                 //Error Log?
             }
